@@ -25,7 +25,7 @@ app.use('/docs', swaggerUI.serve, swaggerUI.setup(swaggerDocs));
 app.use(routes); 
 
 //configuração servidor
-app.listen(process.env.PORT || '5000', () => { 
+app.listen(process.env.PORT || 5000, () => { 
     console.log('rodando na porta 5000');
 })
 
