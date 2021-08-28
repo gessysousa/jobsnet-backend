@@ -1,0 +1,106 @@
+{
+    "openapi": "3.0.0",
+
+    "info": {
+        "title": "API do projeto do backend do banco de currículos da JobsNET",
+        "description": "API do projeto do backend do banco de currículos da JobsNET",
+        "version": "0.0.1"
+    },
+
+    "servers": [
+        {
+            "url": "http://localhost:5000",
+            "description": "ambiente de desenvolvimento"
+        }
+    ],
+
+    "paths": {
+        "/register": {
+            "post": {
+                "summary": "Cadastro do candidato",
+                "description": "Rota do cadastro do candidato, recebe as seguintes informações: nome, nascimento, estado civil, gênero, cpf, rg, logradouro, número, bairro, cidade, cep, email, celular, telefone, profissão, cargo pretendido",
+                "tags": ["candidato"],
+                "requestBody": {
+                    "content" : {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "name": {
+                                        "type": "string"
+                                    },
+                                    "birth": {
+                                        "type": "string"
+                                    },
+                                    "maritalstatus": {
+                                        "type": "string"
+                                    },
+                                    "gender": {
+                                        "type": "string"
+                                    },
+                                    "cpf": {
+                                        "type": "string"
+                                    },
+                                    "rg": {
+                                        "type": "string"
+                                    },
+                                    "address": {
+                                        "type": "string"
+                                    },
+                                    "number": {
+                                        "type": "string"
+                                    },
+                                    "neighborhood": {
+                                        "type": "string"
+                                    },
+                                    "city": {
+                                        "type": "string"
+                                    },
+                                    "cep": {
+                                        "type": "string"
+                                    },
+                                    "email": {
+                                        "type": "string"
+                                    },
+                                    "cellphone": {
+                                        "type": "string"
+                                    },
+                                    "telephone": {
+                                        "type": "string"
+                                    },
+                                    "profession": {
+                                        "type": "string"
+                                    },
+                                    "intendposition": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "examples":{
+                                "candidato": {
+                                    "value": {
+                                        "name": "Fulano de Tal",
+                                        "birth": "01/01/2001",
+                                        "maritalstatus": "Solteiro",
+                                        "gender": "Masculino",
+                                        "cpf": "000.000.000-00",
+                                        "rg": "1234567890",
+                                        "address": "Rua dos bobos",
+                                        "number": "00",
+                                        "neighborhood": "Pasárgada",
+                                        "city": "Pelotas",
+                                        "cep": "00000-000",
+                                        "email": "fulano@email.com",
+                                        "cellphone": "(11)98765-4321",
+                                        "telephone": "(11)98765-4321",
+                                        "profession": "desenvolvedor",
+                                        "intendposition": "desenvolvedor"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

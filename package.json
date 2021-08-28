@@ -1,0 +1,28 @@
+{
+  "name": "backend-jobsnet",
+  "version": "1.0.0",
+  "description": "Desafio do programa Start tech da Gama Academy e Ambev para a criação de um projeto backend para a criação de um banco de curriculos da JobNet",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [
+    "nodejs",
+    "mongodb",
+    "banco",
+    "de",
+    "dados"
+  ],
+  "author": "GessySousa",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.0",
+    "swagger-ui-express": "^4.1.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
